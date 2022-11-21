@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
   xmlns:android="http://schemas.android.com/apk/res/android"
-  android:layout_height="fill_parent" android:layout_width="fill_parent" android:weightSum="6" android:background="@color/color_white" android:orientation="vertical">
+  android:layout_height="fill_parent" android:layout_width="fill_parent" android:weightSum="6" android:background="@color/color_light" android:orientation="vertical">
     
     <TextView android:layout_height="wrap_content" android:id="@+id/screen_chat_item_textView_date" android:layout_width="fill_parent" android:layout_gravity="center_horizontal" android:gravity="center_horizontal" android:textColor="@color/color_gray" android:textStyle="bold" android:text="Vendredi 25, 2001 8:09 PM" android:textSize="10dp" android:layout_margin="3px"></TextView>
     
