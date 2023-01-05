@@ -81,7 +81,7 @@ public class Engine extends NgnEngine{
 		Notification notification = null;
 		Intent intent = new Intent(IMSDroid.getContext(), Main.class);
 		intent.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP  | Intent.FLAG_ACTIVITY_NEW_TASK);
-		PendingIntent contentIntent = PendingIntent.getActivity(IMSDroid.getContext(), notifId/*requestCode*/, intent, PendingIntent.FLAG_UPDATE_CURRENT);
+		PendingIntent contentIntent = PendingIntent.getActivity(IMSDroid.getContext(), notifId/*requestCode*/, intent,  (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S)? PendingIntent.FLAG_MUTABLE | PendingIntent.FLAG_UPDATE_CURRENT : PendingIntent.FLAG_ONE_SHOT | PendingIntent.FLAG_UPDATE_CURRENT);
 
 		// Set the info for the views that show in the notification panel.
 		//notification.setLatestEventInfo(IMSDroid.getContext(), CONTENT_TITLE, tickerText, contentIntent);
